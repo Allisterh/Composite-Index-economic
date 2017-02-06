@@ -1,0 +1,19 @@
+Package: CompositeIndex
+Title: Composite Index
+Version: 1.0.0
+Authors@R: person("Nisus", "Liu", email = "liuhejunlj@163.com", role = c("aut", "cre"))
+Description: composite consistent index from consistent indicators, composite leading index from leading indicators, composite lagging index from lagging indicators. 
+Depends:
+    R (>= 3.2.3)
+License: GPL-3
+Encoding: UTF-8
+importFrom: plyr ddply
+Suggests: bbturns, devtools, plyr,
+    knitr,
+    rmarkdown
+LazyData: true
+RoxygenNote: 6.0.0
+Packaged: 2017-2-6 14:41:16 UTC+8; Nisus
+Author: Nisus Liu [aut, cre]
+Maintainer: Nisus Liu <liuhejunlj@163.com>
+VignetteBuilder: knitr
