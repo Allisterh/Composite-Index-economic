@@ -28,7 +28,9 @@
 
 KL<-function(base, divergent,lag=12,group_lag=3)  {
 
-
+# v1.1 
+	#输出结果修正.最后最小KL值即对应的期数[KL_Mi]在输出列表中没有指定名称.
+# v1.0
   
   # --异常控制--------------------------------
   if (any(is.na(base)))  stop("'base' has value of 'NA'")  # 检查输入的数据是否有NA值
@@ -169,7 +171,7 @@ KL<-function(base, divergent,lag=12,group_lag=3)  {
              Leading_Indicator = Leading_Indicator,
              Lagging_Indicator = Lagging_Indicator,
              KL_Matrix = KL_Matrix,
-             KL_Min
+             KL_Min = KL_Min
              )
   
   lst 
