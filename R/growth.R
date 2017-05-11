@@ -23,6 +23,7 @@ growth = function(x, diff_gap = 1, method = c("division","difference","auto"),  
   
   #--exception control------
   if (!is.vector(x)) stop("'x' must be a vector")
+  if(any(is.na(x))) stop("'x' mustn't have NA")  # 不允许向量中缺失值.
   if (!is.numeric(x)) stop("'x' must be a numeric vector")
   #--numerist options--
   if (class(method) == "character") {
@@ -117,7 +118,7 @@ growth = function(x, diff_gap = 1, method = c("division","difference","auto"),  
     
   }
   
-  sym_r = c(NA, sym_r)
+  sym_r = c(rep(NA, diff_gap), sym_r)  #开头补上NA使得行数与输入向量保持一致.
   sym_r 
   
 }

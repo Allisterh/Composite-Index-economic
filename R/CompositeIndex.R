@@ -13,7 +13,7 @@
 #' \code{leading}, \code{lagging}.
 #' @param rate_method calculating method for symmetry rate. \code{auto} means progress selects \code{division}
 #' or \code{difference} automatically .
-#' @param start,end start and end of time series, it's usage like \code{start=c(2007,2}, \code{end=c(2017,12}.
+#' @param start,end start and end of time series, it's usage like \code{start=c(2007,2)}, \code{end=c(2017,12)}.
 #' @param frequency 12 for monthly data , 4 for seasonal data . In addition , \code{start}, \code{end}, and 
 #' \code{frequency} will determine a number of observation,which the actually number of data will be equal to
 #' . Thus data you input will not be permitted to lack some moth or quarter, otherwise , result will be not 
@@ -27,9 +27,9 @@
 #' \code{install.packages("devtools")} >> \code{library(devtools)} >> \code{install_github("Nisus-Liu/bbturns")}.
 #' @return A data frame including : 
 #' \describe{
-#'   \{consistent}{consistent index}
-#'   \{leading}{leading index }
-#'   \{lagging}{lagging index }
+#'   \ {consistent}{consistent index}
+#'   \ {leading}{leading index }
+#'   \ {lagging}{lagging index }
 #' }
 #' @examples 
 #' CI <- CompositeIndex(consistent , leading , co_wgt = consistent_wgt, start = c(2006,1), end = c(2016,7), baseyear = 2006)

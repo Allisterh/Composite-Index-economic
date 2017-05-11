@@ -24,7 +24,7 @@ lagging indicators respectively .}
 \item{rate_method}{calculating method for symmetry rate. \code{auto} means progress selects \code{division}
 or \code{difference} automatically .}
 
-\item{start, end}{start and end of time series, it's usage like \code{start=c(2007,2}, \code{end=c(2017,12}.}
+\item{start, end}{start and end of time series, it's usage like \code{start=c(2007,2)}, \code{end=c(2017,12)}.}
 
 \item{frequency}{12 for monthly data , 4 for seasonal data . In addition , \code{start}, \code{end}, and 
 \code{frequency} will determine a number of observation,which the actually number of data will be equal to
@@ -38,6 +38,14 @@ adjust relative size of index .}
 base on compounded average growth, \code{TRUE} : yes ; \code{FALSE }: no.}
 
 \item{neighbour...mcd_gap}{refer to \link{bbturns}, see \url{https://github.com/Nisus-Liu/bbturns}.}
+}
+\value{
+A data frame including : 
+\describe{
+  \ {consistent}{consistent index}
+  \ {leading}{leading index }
+  \ {lagging}{lagging index }
+}
 }
 \description{
 CompositeIndex: return composite economic index
